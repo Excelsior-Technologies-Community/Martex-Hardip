@@ -1,0 +1,54 @@
+/* HERO SECTION */
+
+@media (max-width: 1199px) {
+    #hero-1 {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    #hero-1 {
+        margin-top: 80px;
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero-1 {
+        width: auto;
+        background-attachment: scroll;
+    }
+}
+
+
+@media (min-width: 1200px) { /* xl */
+  .hero-title { font-size: 3.625rem !important; margin-bottom: 28px !important; }
+  .hero-text { margin-bottom: 32px !important; }
+  .hero-badge { margin: 20px 0 0 0 !important; }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { /* lg to xl */
+  .hero-title { font-size: 3.375rem !important; margin-bottom: 24px !important; }
+  .hero-text { margin-bottom: 28px !important; }
+  .hero-badge { margin-top: 15px !important; margin-bottom: 0 !important; margin-left: 0 !important; margin-right: 0 !important; }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { /* md to lg */
+  .hero-title { font-size: 3.08823rem !important; margin-bottom: 18px !important; }
+  .hero-text { padding-right: 0; margin-bottom: 24px !important; }
+  .hero-badge { margin-top: 13px !important; margin-bottom: 0 !important; margin-left: 0 !important; margin-right: 0 !important; }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { /* sm to md */
+  .hero-txt-wrapper { padding-left: 3%; padding-right: 3%; padding-top: 0; padding-bottom: 0; }
+  .hero-title { font-size: 2.5rem !important; line-height: 1.35 !important; margin-bottom: 15px !important; }
+  .hero-text { margin-bottom: 25px !important; }
+  .hero-badge { margin-top: 15px !important; margin-bottom: 0 !important; margin-left: 0 !important; margin-right: 0 !important; }
+}
+
+@media (max-width: 575.98px) { /* Extra small to sm */
+  .hero-title { font-size: 2.0625rem !important; line-height: 1.35 !important; margin-bottom: 18px !important; }
+  .hero-text { margin-bottom: 25px !important; }
+  .hero-badge { margin-top: 18px !important; margin-bottom: 0 !important; }
+}
