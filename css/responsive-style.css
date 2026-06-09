@@ -1,54 +1,289 @@
 /* HERO SECTION */
 
 @media (max-width: 1199px) {
-    #hero-1 {
-        padding-top: 120px;
-        padding-bottom: 80px;
-    }
+  #hero-1 {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 991px) {
-    #hero-1 {
-        margin-top: 80px;
-        padding: 70px 0;
-    }
+  #hero-1 {
+    margin-top: 80px;
+    padding: 70px 0;
+  }
 }
 
 @media (max-width: 767px) {
-    #hero-1 {
-        width: auto;
-        background-attachment: scroll;
+  #hero-1 {
+    width: auto;
+    background-attachment: scroll;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  /* xl */
+  .hero-title {
+    font-size: 3.625rem !important;
+    margin-bottom: 28px !important;
+  }
+
+  .hero-text {
+    margin-bottom: 32px !important;
+  }
+
+  .hero-badge {
+    margin: 20px 0 0 0 !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* lg to xl */
+  .hero-title {
+    font-size: 3.375rem !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-text {
+    margin-bottom: 28px !important;
+  }
+
+  .hero-badge {
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* md to lg */
+  .hero-title {
+    font-size: 3.08823rem !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-badge {
+    margin-top: 13px !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* sm to md */
+  .hero-txt-wrapper {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .hero-text {
+    margin-bottom: 25px !important;
+  }
+
+  .hero-badge {
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  /* Extra small to sm */
+  .hero-title {
+    font-size: 2.0625rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-text {
+    margin-bottom: 25px !important;
+  }
+
+  .hero-badge {
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+
+  .features-section {
+    padding: 80px 0;
+  }
+
+  .section-heading {
+    font-size: 40px;
+  }
+
+  .feature-card {
+    padding: 40px 30px;
+  }
+
+  .feature-text h5 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .feature-text h5 {
+    font-size: 22px;
+  }
+
+  .feature-text p {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 575px) {
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .feature-card {
+    padding: 25px 15px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+
+  .statistic-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .statistic-text {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  .statistic-number h2 {
+    font-size: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  .statistic-section {
+    padding: 60px 0;
+  }
+
+  .statistic-number h2 {
+    font-size: 34px;
+  }
+
+  .statistic-text p {
+    font-size: 15px;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 991px) {
+
+  .content-section {
+    padding: 80px 0;
+  }
+
+  .content-box {
+    padding-left: 0;
+  }
+
+  .content-title {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  .content-section {
+    padding: 60px 0;
+  }
+
+  .img-block {
+    margin-bottom: 30px;
+  }
+
+  .content-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .content-box p,
+  .feature-list li {
+    font-size: 15px;
+  }
+
+  .btn-outline-dark {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 575px) {
+
+  .content-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+    .feature-item {
+        gap: 10px;
     }
-}
 
+    .check-icon {
+        font-size: 16px;
+        margin-top: 3px;
+    }
 
-@media (min-width: 1200px) { /* xl */
-  .hero-title { font-size: 3.625rem !important; margin-bottom: 28px !important; }
-  .hero-text { margin-bottom: 32px !important; }
-  .hero-badge { margin: 20px 0 0 0 !important; }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) { /* lg to xl */
-  .hero-title { font-size: 3.375rem !important; margin-bottom: 24px !important; }
-  .hero-text { margin-bottom: 28px !important; }
-  .hero-badge { margin-top: 15px !important; margin-bottom: 0 !important; margin-left: 0 !important; margin-right: 0 !important; }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) { /* md to lg */
-  .hero-title { font-size: 3.08823rem !important; margin-bottom: 18px !important; }
-  .hero-text { padding-right: 0; margin-bottom: 24px !important; }
-  .hero-badge { margin-top: 13px !important; margin-bottom: 0 !important; margin-left: 0 !important; margin-right: 0 !important; }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) { /* sm to md */
-  .hero-txt-wrapper { padding-left: 3%; padding-right: 3%; padding-top: 0; padding-bottom: 0; }
-  .hero-title { font-size: 2.5rem !important; line-height: 1.35 !important; margin-bottom: 15px !important; }
-  .hero-text { margin-bottom: 25px !important; }
-  .hero-badge { margin-top: 15px !important; margin-bottom: 0 !important; margin-left: 0 !important; margin-right: 0 !important; }
-}
-
-@media (max-width: 575.98px) { /* Extra small to sm */
-  .hero-title { font-size: 2.0625rem !important; line-height: 1.35 !important; margin-bottom: 18px !important; }
-  .hero-text { margin-bottom: 25px !important; }
-  .hero-badge { margin-top: 18px !important; margin-bottom: 0 !important; }
+    .feature-item p {
+        font-size: 15px;
+    }
 }
