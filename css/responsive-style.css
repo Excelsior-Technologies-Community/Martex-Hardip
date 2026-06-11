@@ -1,3 +1,319 @@
+
+@media (max-width: 991px) {
+
+  /* Show mobile bar */
+  .wsmobileheader {
+    display: flex;
+  }
+
+  /* Desktop logo hidden */
+  .desktoplogo {
+    display: none !important;
+  }
+
+  /* Main wrapper becomes a slide-in drawer */
+  .wsmainfull {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: 4px 0 30px rgba(0, 0, 0, .15);
+    overflow-y: auto;
+    padding: 70px 0 40px;
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1032;
+  }
+
+  .wsmainfull.open {
+    left: 0;
+  }
+
+  .wsmainwp {
+    height: auto;
+    padding: 0;
+    display: block;
+  }
+
+  /* Overlay */
+  .overlapblackbg {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1031;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+  }
+
+  .wsmainfull.open~.overlapblackbg,
+  .wsmenu.open .overlapblackbg {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Nav list stacked */
+  .wsmenu {
+    width: 100%;
+  }
+
+  .wsmenu-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    height: auto !important;
+  }
+
+  .wsmenu-list>li {
+    height: auto;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wsmenu-list>li>a.h-link {
+    padding: 14px 22px;
+    font-size: 0.95rem;
+    color: var(--text-nav);
+    justify-content: space-between;
+  }
+
+  /* Click toggle for mobile sub-menus */
+  .wsmenu-click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 52px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .wsmenu-arrow {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: solid var(--text-sub);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+  }
+
+  .ws-activearrow .wsmenu-arrow {
+    transform: rotate(-135deg);
+  }
+
+  /* Sub-menu mobile */
+  .sub-menu {
+    position: static !important;
+    display: none !important;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: var(--light-bg);
+  }
+
+  .sub-menu.mobile-open {
+    display: block !important;
+  }
+
+  .sub-menu li a {
+    padding: 11px 22px 11px 36px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.88rem;
+  }
+
+  /* Mega menu mobile */
+  .wsmegamenu {
+    position: static !important;
+    display: none !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0 0;
+    background: var(--light-bg);
+  }
+
+  .wsmegamenu.mobile-open {
+    display: block !important;
+  }
+
+  .wsmegamenu .flex {
+    flex-direction: column;
+  }
+
+  .wsmegamenu .lg\:w-3\/12 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .wsmegamenu .link-list li a {
+    padding: 10px 22px 10px 36px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Right-side auth links */
+  .wsmenu-list>li.reg-fst-link {
+    margin-left: 0;
+  }
+
+  .wsmenu-list>li.nl-simple.mobile-last-link>a,
+  .wsmenu-list>li.nl-simple>a.last-link {
+    margin: 16px 22px;
+    width: calc(100% - 44px);
+    justify-content: center;
+  }
+
+  .btn {
+    width: auto;
+    text-align: center;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
+   RESPONSIVE — Small Mobile ≤ 575px
+   ════════════════════════════════════════════════════════════ */
+@media (max-width: 575px) {
+  .wsmainfull {
+    width: 260px;
+    left: -260px;
+  }
+
+  .wsmobileheader {
+    padding: 12px 16px;
+  }
+
+  .smllogo img {
+    max-height: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 100px 0 60px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-image {
+    margin-top: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .hero-badge {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .style-changer {
+    display: none;
+  }
+}
+
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 991px) {
+
+  .features-section {
+    padding: 80px 0;
+  }
+
+  .section-title h2 {
+    font-size: 40px;
+  }
+
+  .section-title p {
+    font-size: 18px;
+  }
+
+  .fbox-6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+  }
+
+  .shape-ico {
+    width: 110px;
+    height: 110px;
+  }
+
+  .shape-ico svg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .shape-ico .icon {
+    font-size: 40px;
+  }
+
+  .fbox-6 h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .shape-ico {
+    width: 100px;
+    height: 100px;
+  }
+
+  .shape-ico svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .shape-ico .icon {
+    font-size: 35px;
+  }
+}
+
 /* HERO SECTION */
 
 @media (max-width: 1199px) {
@@ -274,16 +590,61 @@
 }
 
 @media (max-width: 767px) {
-    .feature-item {
-        gap: 10px;
-    }
+  .feature-item {
+    gap: 10px;
+  }
 
-    .check-icon {
-        font-size: 16px;
-        margin-top: 3px;
-    }
+  .check-icon {
+    font-size: 16px;
+    margin-top: 3px;
+  }
 
-    .feature-item p {
-        font-size: 15px;
-    }
+  .feature-item p {
+    font-size: 15px;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 1199px) {
+  .custom-section {
+    padding: 80px 0;
+  }
+
+  .content-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-section {
+    padding: 70px 0;
+  }
+
+  .content-title {
+    font-size: 34px;
+  }
+
+  .txt-block {
+    text-align: center;
+  }
+
+  .simple-list {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-section {
+    padding: 60px 0;
+  }
+
+  .content-title {
+    font-size: 28px;
+  }
+
+  .simple-list li {
+    font-size: 15px;
+  }
 }
