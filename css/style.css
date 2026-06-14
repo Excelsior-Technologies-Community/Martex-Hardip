@@ -568,6 +568,7 @@ li:hover>.sub-menu {
 
 
 
+
 /* HERO SECTON */
 #hero-1 {
   position: relative;
@@ -2045,130 +2046,726 @@ li:hover>.sub-menu {
 /* review card  */
 
 .reviews-section {
-    padding: 100px 0;
-    background: #f8f9fa;
+  padding: 100px 0;
+  background: #f8f9fa;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Section Heading */
 .section-heading {
-    text-align: center;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .section-heading h2 {
-    font-size: 50px;
-    font-weight: 700;
-    color: #24304a;
-    margin-bottom: 15px;
-    line-height: 1.2;
+  font-size: 50px;
+  font-weight: 700;
+  color: #24304a;
+  margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .section-heading p {
-    font-size: 21px;
-    color: #6c757d;
+  font-size: 21px;
+  color: #6c757d;
 }
 
 /* Review Cards */
 .reviews-wrapper {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .review-card {
-    flex: 1;
-    min-width: 300px;
-    background: #fff;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
 .review-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .quote-icon {
-    font-size: 60px;
-    color: #f74780;
-    opacity: 0.2;
-    line-height: 1;
-    margin-bottom: 15px;
+  font-size: 60px;
+  color: #f74780;
+  opacity: 0.2;
+  line-height: 1;
+  margin-bottom: 15px;
 }
 
 .review-card p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 25px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
 }
 
 /* Author */
 .author-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .author-info img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .author-info div {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .author-info h6 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: #24304a;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #24304a;
 }
 
 .author-info span {
-    color: #888;
-    font-size: 14px;
+  color: #888;
+  font-size: 14px;
 }
 
 /* Responsive */
 @media (max-width: 991px) {
-    .section-heading h2 {
-        font-size: 38px;
-    }
+  .section-heading h2 {
+    font-size: 38px;
+  }
 
-    .reviews-wrapper {
-        gap: 20px;
-    }
+  .reviews-wrapper {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-    .reviews-section {
-        padding: 70px 0;
+  .reviews-section {
+    padding: 70px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .section-heading p {
+    font-size: 18px;
+  }
+
+  .reviews-wrapper {
+    flex-direction: column;
+  }
+
+  .review-card {
+    min-width: 100%;
+  }
+}
+
+
+
+/* ==========================
+   Rating Section
+========================== */
+
+.rating-section {
+  padding-top: 70px;
+}
+
+.rating-title {
+  margin-bottom: 40px;
+}
+
+.rating-title h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6c757d;
+  margin: 0;
+}
+
+.rating-wrapper {
+  padding: 0 16%;
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.rbox-img {
+  margin-bottom: 20px;
+}
+
+.rbox-img img {
+  max-height: 38px;
+  width: auto;
+}
+
+/* ==========================
+   Rating Badge
+========================== */
+
+.star-rating {
+  display: inline-block;
+  background: #fff;
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+  border: 1px solid #f1f1f1;
+}
+
+.star-rating {
+  color: #ffb30c;
+}
+
+.star-rating span {
+  color: #111;
+  margin-left: 5px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 1199px) {
+  .rating-wrapper {
+    padding: 0 12%;
+  }
+}
+
+@media (max-width: 991px) {
+  .rating-section {
+    padding-top: 50px;
+  }
+
+  .rating-wrapper {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .rating-wrapper {
+    padding: 0;
+  }
+
+  .rating-title h5 {
+    font-size: 16px;
+  }
+
+  .rbox-img img {
+    max-height: 30px;
+  }
+
+  .star-rating {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+/* =========================
+   Reviews Section
+========================= */
+
+.reviews-section {
+  padding: 100px 0;
+  background: #f8f9fc;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-heading h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+/* =========================
+   Swiper
+========================= */
+
+.mySwiper {
+  padding-bottom: 60px;
+}
+
+/* =========================
+   Review Card
+========================= */
+
+.swiper-slide {
+  height: auto;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+  transition: all .3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-body {
+  padding: 35px;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   User Info
+========================= */
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-avatar img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-name {
+  margin-left: 15px;
+}
+
+.card-name h6 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: #111;
+}
+
+.card-name span {
+  color: #888;
+  font-size: 14px;
+}
+
+/* =========================
+   Pagination
+========================= */
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff4d7d;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:991px) {
+
+  .reviews-section {
+    padding: 80px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 38px;
+  }
+}
+
+@media(max-width:767px) {
+
+  .reviews-section {
+    padding: 60px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .section-heading p {
+    font-size: 16px;
+  }
+
+  .card-body {
+    padding: 25px;
+  }
+}
+
+
+
+
+/* ==========================
+   Integrations Section
+========================== */
+
+.integrations-section {
+    padding-top: 100px;
+}
+
+.integrations-2-wrapper {
+    /* background: url('../images/bg-02.jpg') center center/cover no-repeat; */
+    background-color: #F6F5FA;
+    padding: 80px 70px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* Section Title */
+
+.integrations-2-wrapper h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.integrations-2-wrapper p {
+    font-size: 21px;
+    color: #6c757d;
+}
+
+/* Tool Cards */
+
+.in_tool {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 30px;
+}
+
+.in_tool_logo {
+    background: #fff;
+    border-radius: 12px;
+    padding: 45px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    transition: all .4s ease;
+}
+
+.in_tool_logo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.in_tool_logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    
+}
+
+.in_tool h6 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #111;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 1199px) {
+
+    .integrations-section {
+        padding-top: 80px;
     }
 
-    .section-heading h2 {
+    .integrations-2-wrapper {
+        padding: 70px 50px;
+    }
+
+    .integrations-2-wrapper h2 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .integrations-section {
+        padding-top: 70px;
+    }
+
+    .integrations-2-wrapper {
+        padding: 60px 40px;
+    }
+
+    .integrations-2-wrapper h2 {
+        font-size: 36px;
+    }
+
+    .integrations-2-wrapper p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .integrations-2-wrapper {
+        padding: 50px 25px;
+    }
+
+    .integrations-2-wrapper h2 {
         font-size: 30px;
     }
 
-    .section-heading p {
+    .integrations-2-wrapper p {
+        font-size: 16px;
+    }
+
+    .in_tool_logo {
+        padding: 35px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .integrations-section {
+        padding-top: 60px;
+    }
+
+    .integrations-2-wrapper {
+        border-radius: 0;
+        margin-left: -12px;
+        margin-right: -12px;
+        padding: 40px 15px;
+    }
+
+    .integrations-2-wrapper h2 {
+        font-size: 26px;
+    }
+}
+
+.more-btn {
+    margin-top: 60px;
+}
+
+.custom-btn {
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background: #f74780;
+    border-color: #f74780;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .more-btn {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .more-btn {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .more-btn {
+        margin-top: 40px;
+    }
+
+    .custom-btn {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+}
+
+
+
+/* ==========================
+   FAQ Section
+========================== */
+
+.faqs-section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.section-title {
+    margin-bottom: 70px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    font-size: 21px;
+    color: #6b7280;
+}
+
+/* ==========================
+   Questions
+========================== */
+
+.question {
+    margin-bottom: 35px;
+}
+
+.question h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.question h5 span {
+    color: #f74780;
+}
+
+.question p {
+    color: #6b7280;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* ==========================
+   List
+========================== */
+
+.simple-list {
+    list-style: disc;
+    padding-left: 22px;
+    margin-bottom: 0;
+}
+
+.simple-list li {
+    color: #6b7280;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.simple-list li::marker {
+    color: #f74780;
+}
+
+/* ==========================
+   More Questions Box
+========================== */
+
+.more-questions {
+    margin-top: 40px;
+}
+
+.more-questions-txt {
+    background: #f8f9fc;
+    padding: 22px 46px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.more-questions-txt p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.more-questions-txt a {
+    color: #f74780;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.more-questions-txt a:hover {
+    color: #353f4f;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 991px) {
+
+    .faqs-section {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    .section-title p {
         font-size: 18px;
     }
 
-    .reviews-wrapper {
-        flex-direction: column;
+    .question h5 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .faqs-section {
+        padding-top: 60px;
     }
 
-    .review-card {
-        min-width: 100%;
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .question h5 {
+        font-size: 18px;
+    }
+
+    .more-questions-txt {
+        padding: 18px 25px;
+        border-radius: 20px;
+    }
+
+    .more-questions-txt p {
+        font-size: 16px;
     }
 }
