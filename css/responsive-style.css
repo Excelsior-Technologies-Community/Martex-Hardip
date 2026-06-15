@@ -648,3 +648,293 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 991px) {
+
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .footer-links,
+  .footer-form {
+    margin-bottom: 35px;
+  }
+
+  .bottom-footer-socials {
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+
+
+@media (max-width: 1199px) {
+
+  .banner-overlay {
+    padding: 70px 18%;
+  }
+
+  .banner-title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .banner-section {
+    padding-top: 80px;
+  }
+
+  .banner-overlay {
+    padding: 60px 15%;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .banner-desc {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .banner-overlay {
+    padding: 55px 40px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .banner-desc {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .banner-section {
+    padding-top: 70px;
+  }
+
+  .banner-wrapper {
+    border-radius: 0;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .banner-overlay {
+    padding: 50px 25px;
+  }
+
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .banner-desc {
+    font-size: 16px;
+  }
+
+  .banner-btn {
+    width: 100%;
+  }
+}
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 991px) {
+
+  .faqs-section {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .section-title h2 {
+    font-size: 40px;
+  }
+
+  .section-title p {
+    font-size: 18px;
+  }
+
+  .question h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .faqs-section {
+    padding-top: 60px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .question h5 {
+    font-size: 18px;
+  }
+
+  .more-questions-txt {
+    padding: 18px 25px;
+    border-radius: 20px;
+  }
+
+  .more-questions-txt p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer-links h6,
+  .footer-form h6 {
+    margin-bottom: 20px;
+  }
+
+  .bottom-footer {
+    text-align: center;
+  }
+
+  .bottom-footer-socials {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .footer-logo-dark {
+    max-height: 35px;
+  }
+
+  .footer-links,
+  .footer-form {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width:991px){
+
+    .wsmobileheader{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        height:70px;
+        padding:0 20px;
+    }
+
+    #wsnavtoggle{
+        width:40px;
+        height:40px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin:0;
+    }
+
+    #wsnavtoggle span,
+    #wsnavtoggle span::before,
+    #wsnavtoggle span::after{
+        width:28px;
+        height:3px;
+    }
+
+    .smllogo img{
+        max-height:38px;
+    }
+}
+
+
+
+
+
+
+/* Mobile Header */
+.wsmobileheader{
+    display:none;
+}
+
+@media (max-width:991px){
+
+    .wsmobileheader{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        height:70px;
+        padding:0 20px;
+        background:#fff;
+        width:100%;
+    }
+
+    .desktoplogo{
+        display:none;
+    }
+
+    #wsnavtoggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        cursor:pointer;
+    }
+
+    .wsmenu{
+        position:fixed;
+        top:70px;
+        left:-100%;
+        width:280px;
+        height:100vh;
+        background:#fff;
+        transition:.4s;
+        overflow-y:auto;
+        z-index:999;
+    }
+
+    .wsmenu.active{
+        left:0;
+    }
+
+    .wsmenu-list{
+        display:flex;
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .wsmenu-list li{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .sub-menu,
+    .wsmegamenu{
+        position:static;
+        display:none;
+        width:100%;
+        box-shadow:none;
+    }
+
+    .sub-menu.active,
+    .wsmegamenu.active{
+        display:block;
+    }
+}

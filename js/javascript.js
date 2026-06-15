@@ -1,3 +1,29 @@
+const darkBtn = document.getElementById("darkModeToggle");
+
+// Load Saved Mode
+if(localStorage.getItem("darkMode") === "enabled"){
+    document.body.classList.add("dark-mode");
+    darkBtn.innerHTML = "☀️ Light Mode";
+}
+
+darkBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("darkMode","enabled");
+        darkBtn.innerHTML = "☀️ Light Mode";
+    }else{
+        localStorage.setItem("darkMode","disabled");
+        darkBtn.innerHTML = "🌙 Dark Mode";
+    }
+
+});
+
+
+
+
+
 const styleChanger = document.getElementById("styleChanger");
 const toggleChanger = document.getElementById("toggleChanger");
 
@@ -134,3 +160,4 @@ const swiper = new Swiper(".mySwiper", {
         }
     }
 });
+

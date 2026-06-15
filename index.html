@@ -45,7 +45,9 @@
     <div class="changer-body">
 
       <div class="text-center mb-4">
-        <h5 class="theme-title">Dark Mode</h5>
+        <button id="darkModeToggle" class="btn btn-dark w-100 mb-3">
+          🌙 Dark Mode
+        </button>
         <p class="text-white">Color Scheme</p>
       </div>
 
@@ -137,47 +139,59 @@
                 </li>
 
                 <!-- Pages (mega menu) -->
-                <li aria-haspopup="true" class="mg_link">
-                  <span class="wsmenu-click" id="toggle-pages">
-                    <i class="wsmenu-arrow"></i>
-                  </span>
-                  <a href="#" class="h-link">Pages <span class="wsarrow"></span></a>
-                  <div class="wsmegamenu w-75 clearfix" id="mega-pages">
-                    <div class="container">
-                      <div class="flex flex-wrap">
-                        <ul class="lg:w-3/12 link-list">
-                          <li class="fst-li"><a href="about.html">About Us</a></li>
-                          <li><a href="team.html">Our Team</a></li>
-                          <li><a href="careers.html">Careers <span class="sm-info">4</span></a></li>
-                          <li><a href="career-role.html">Career Details</a></li>
-                          <li><a href="contacts.html">Contact Us</a></li>
-                        </ul>
-                        <ul class="lg:w-3/12 link-list">
-                          <li class="fst-li"><a href="features.html">Core Features</a></li>
-                          <li><a href="projects.html">Our Projects</a></li>
-                          <li><a href="project-details.html">Project Details</a></li>
-                          <li><a href="reviews.html">Testimonials</a></li>
-                          <li><a href="download.html">Download Page</a></li>
-                        </ul>
-                        <ul class="lg:w-3/12 link-list">
-                          <li class="fst-li"><a href="pricing-1.html">Pricing Page #1</a></li>
-                          <li><a href="pricing-2.html">Pricing Page #2</a></li>
-                          <li><a href="faqs.html">FAQs Page</a></li>
-                          <li><a href="help-center.html">Help Center</a></li>
-                          <li><a href="404.html">404 Page</a></li>
-                        </ul>
-                        <ul class="lg:w-3/12 link-list">
-                          <li class="fst-li"><a href="blog-listing.html">Blog Listing</a></li>
-                          <li><a href="single-post.html">Single Blog Post</a></li>
-                          <li><a href="login-2.html">Login Page</a></li>
-                          <li><a href="signup-2.html">Signup Page</a></li>
-                          <li><a href="reset-password.html">Reset Password</a></li>
+                
+          
+                <li class="mg_link">
+                  <a href="#" class="h-link">
+                    Pages <i class="bi bi-chevron-down"></i>
+                  </a>
+
+                  <div class="wsmegamenu">
+                    <div class="row">
+
+                      <div class="col-lg-3">
+                        <ul class="link-list">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Our Team</a></li>
+                          <li><a href="#">Careers <span class="badge">4</span></a></li>
+                          <li><a href="#">Career Details</a></li>
+                          <li><a href="#">Contact Us</a></li>
                         </ul>
                       </div>
+
+                      <div class="col-lg-3">
+                        <ul class="link-list">
+                          <li><a href="#">Core Features</a></li>
+                          <li><a href="#">Our Projects</a></li>
+                          <li><a href="#">Project Details</a></li>
+                          <li><a href="#">Testimonials</a></li>
+                          <li><a href="#">Download Page</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-lg-3">
+                        <ul class="link-list">
+                          <li><a href="#">Pricing Page #1</a></li>
+                          <li><a href="#">Pricing Page #2</a></li>
+                          <li><a href="#">FAQs Page</a></li>
+                          <li><a href="#">Help Center</a></li>
+                          <li><a href="#">404 Page</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-lg-3">
+                        <ul class="link-list">
+                          <li><a href="#">Blog Listing</a></li>
+                          <li><a href="#">Single Blog Post</a></li>
+                          <li><a href="#">Login Page</a></li>
+                          <li><a href="#">Signup Page</a></li>
+                          <li><a href="#">Reset Password</a></li>
+                        </ul>
+                      </div>
+
                     </div>
                   </div>
                 </li>
-
                 <!-- Pricing -->
                 <li class="nl-simple" aria-haspopup="true">
                   <a href="pricing-1.html" class="h-link">Pricing</a>
@@ -281,10 +295,10 @@
                 <div class="shape-ico">
 
                   <svg viewBox="0 0 200 200">
-                    <path fill="#f74780"
+                    <!-- <path fill="#f74780"
                       d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
                       transform="translate(100 100)">
-                    </path>
+                    </path> -->
                   </svg>
 
                   <i class="bi bi-bar-chart-line-fill icon"></i>
@@ -311,10 +325,10 @@
                 <div class="shape-ico">
 
                   <svg viewBox="0 0 200 200">
-                    <path fill="#f74780"
+                    <!-- <path fill="#f74780"
                       d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
-                      transform="translate(100 100)">
-                    </path>
+                      transform="translate(100 100)"> -->
+                    <!-- </path> -->
                   </svg>
 
                   <i class="bi bi-lightbulb-fill icon"></i>
@@ -341,10 +355,10 @@
                 <div class="shape-ico">
 
                   <svg viewBox="0 0 200 200">
-                    <path fill="#f74780"
+                    <!-- <path fill="#f74780"
                       d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
                       transform="translate(100 100)">
-                    </path>
+                    </path> -->
                   </svg>
 
                   <i class="bi bi-megaphone-fill icon"></i>
@@ -371,10 +385,10 @@
                 <div class="shape-ico">
 
                   <svg viewBox="0 0 200 200">
-                    <path fill="#f74780"
+                    <!-- <path fill="#f74780"
                       d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z"
                       transform="translate(100 100)">
-                    </path>
+                    </path> -->
                   </svg>
 
                   <i class="bi bi-search-heart-fill icon"></i>
@@ -1641,7 +1655,164 @@
 
       </div>
     </section>
-    
+    <!-- Banner 3 -->
+    <section id="banner-3" class="banner-section">
+      <div class="container">
+
+        <div class="banner-wrapper">
+
+          <div class="banner-overlay">
+
+            <h2 class="banner-title">
+              Starting with Martex is easy, fast and free
+            </h2>
+
+            <p class="banner-desc">
+              It only takes a few clicks to get started
+            </p>
+
+            <a href="#" class="btn banner-btn">
+              Get Started - It's Free
+            </a>
+
+            <p class="banner-note">
+              <i class="fa-solid fa-check"></i>
+              Free for 14 days, no credit card required.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+
+        <div class="row">
+
+          <!-- Logo -->
+          <div class="col-lg-3 col-md-12 mb-4">
+            <div class="footer-info">
+              <img src="/assert/img/logo-pink.png" alt="Logo" class="footer-logo-dark">
+            </div>
+          </div>
+
+          <!-- Company -->
+          <div class="col-lg-2 col-md-4 col-6 mb-4">
+            <div class="footer-links">
+              <h6>Company</h6>
+
+              <ul class="foo-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Blog</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Product -->
+          <div class="col-lg-2 col-md-4 col-6 mb-4">
+            <div class="footer-links">
+              <h6>Product</h6>
+
+              <ul class="foo-links">
+                <li><a href="#">Integration</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-lg-2 col-md-4 col-6 mb-4">
+            <div class="footer-links">
+              <h6>Legal</h6>
+
+              <ul class="foo-links">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-8 mb-4">
+            <div class="footer-form">
+
+              <h6>Follow the Best</h6>
+
+              <form class="newsletter-form">
+                <div class="input-group">
+
+                  <input type="email" class="form-control" placeholder="Email Address">
+
+                  <button class="btn btn-theme" type="submit">
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="bottom-footer">
+
+          <div class="row align-items-center">
+
+            <div class="col-md-6">
+              <div class="footer-copyright">
+                <p>
+                  © 2025 Martex.
+                  <span>All Rights Reserved</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="bottom-footer-socials">
+
+                <li>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
   </div><!-- /page -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
