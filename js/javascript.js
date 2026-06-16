@@ -161,3 +161,18 @@ const swiper = new Swiper(".mySwiper", {
     }
 });
 
+
+// ક્લોઝ બટન પર ક્લિક કરવાથી મેનૂ બંધ કરવાનો કોડ
+document.getElementById('wsmenu-close').addEventListener('click', function() {
+    var mainMenu = document.querySelector('.wsmainfull');
+    var hamburgerToggle = document.getElementById('wsnavtoggle');
+    
+    // મેનૂમાંથી 'open' ક્લાસ હટાવો
+    if(mainMenu) {
+        mainMenu.classList.remove('open');
+    }
+    // હેમબર્ગર આયકન એનિમેશન રીસેટ કરવા (જો લાગુ પડતું હોય)
+    if(hamburgerToggle) {
+        hamburgerToggle.classList.remove('wsactive');
+    }
+});

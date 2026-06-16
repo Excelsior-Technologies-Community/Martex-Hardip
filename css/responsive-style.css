@@ -1,33 +1,68 @@
 
+/* ==========================================================================
+   RESPONSIVE — Tablet & Mobile (≤ 991px)
+   ========================================================================== */
 @media (max-width: 991px) {
 
-  /* Show mobile bar */
+  /* 1. Show mobile header bar and align elements */
   .wsmobileheader {
-    display: flex;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
   }
 
-  /* Desktop logo hidden */
+  #wsnavtoggle {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
   .desktoplogo {
     display: none !important;
   }
 
-  /* Main wrapper becomes a slide-in drawer */
+  /* 2. Main wrapper becomes a slide-in drawer from the RIGHT side */
   .wsmainfull {
     position: fixed;
     top: 0;
-    left: -280px;
+    left: auto !important;       
+    right: -280px !important;    
     width: 280px;
     height: 100vh;
     background: var(--white);
-    box-shadow: 4px 0 30px rgba(0, 0, 0, .15);
+    box-shadow: -4px 0 30px rgba(0, 0, 0, .15); 
     overflow-y: auto;
-    padding: 70px 0 40px;
-    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 60px 0 40px; 
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; 
     z-index: 1032;
   }
 
   .wsmainfull.open {
-    left: 0;
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  /* Close Button Inside Menu Drawer */
+  .wsmenu-close-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px; 
+    font-size: 24px;
+    color: var(--text-nav);
+    cursor: pointer;
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    transition: background 0.2s;
+  }
+
+  .wsmenu-close-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
   }
 
   .wsmainwp {
@@ -36,7 +71,7 @@
     display: block;
   }
 
-  /* Overlay */
+  /* 3. Overlay backdrop layer */
   .overlapblackbg {
     display: block;
     position: fixed;
@@ -48,7 +83,7 @@
     transition: opacity 0.35s ease, visibility 0.35s ease;
   }
 
-  .wsmainfull.open~.overlapblackbg,
+  .wsmainfull.open ~ .overlapblackbg,
   .wsmenu.open .overlapblackbg {
     opacity: 1;
     visibility: visible;
@@ -69,13 +104,16 @@
   .wsmenu-list>li {
     height: auto;
     border-bottom: 1px solid var(--border);
+    position: relative; 
   }
 
   .wsmenu-list>li>a.h-link {
     padding: 14px 22px;
     font-size: 0.95rem;
     color: var(--text-nav);
+    display: flex;
     justify-content: space-between;
+    text-align: left !important; /* મેઈન લિંક ટેક્સ્ટ પણ ડાબી બાજુ રહેશે */
   }
 
   /* Click toggle for mobile sub-menus */
@@ -106,57 +144,123 @@
     transform: rotate(-135deg);
   }
 
-  /* Sub-menu mobile */
+  /* ─── 4. Sub-menu mobile (ડાબી બાજુ અલાઈનમેન્ટ) ─── */
   .sub-menu {
     position: static !important;
     display: none !important;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    background: var(--light-bg);
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    background: var(--light-bg) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    width: 100% !important;
   }
 
   .sub-menu.mobile-open {
     display: block !important;
   }
 
-  .sub-menu li a {
-    padding: 11px 22px 11px 36px;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.88rem;
+  .sub-menu li {
+    display: block !important;
+    float: none !important;
   }
 
-  /* Mega menu mobile */
+  .sub-menu li a {
+    padding: 12px 22px 12px 36px !important; /* ડાબી બાજુ પરફેક્ટ જગ્યા */
+    border-bottom: 1px solid var(--border) !important;
+    font-size: 0.88rem !important;
+    display: block !important;
+    color: var(--text-nav) !important;
+    text-align: left !important; /* લિંક્સ ડાબી બાજુથી શરૂ થશે */
+  }
+
+  /* ─── 5. Mega menu mobile (Pages ના ઓપ્શન્સ ડાબી બાજુ સેટ) ─── */
   .wsmegamenu {
     position: static !important;
-    display: none !important;
-    transform: none !important;
+    display: none !important; 
     width: 100% !important;
     max-width: 100% !important;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-    padding: 10px 0 0;
-    background: var(--light-bg);
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 10px 0 !important;
+    background: var(--light-bg) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 
   .wsmegamenu.mobile-open {
     display: block !important;
   }
 
+  /* ફ્લેક્સ લેઆઉટ હટાવીને નોર્મલ બ્લોક કરવો */
+  .wsmegamenu .row,
   .wsmegamenu .flex {
-    flex-direction: column;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
+  /* ગ્રીડ કૉલમ્સ સિંગલ લિસ્ટમાં કન્વર્ટ થશે */
+  .wsmegamenu [class*="col-"],
   .wsmegamenu .lg\:w-3\/12 {
-    width: 100%;
-    padding: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 0 !important;
+    margin: 0 0 10px 0 !important; 
+    display: block !important;
   }
 
+  /* હેડિંગ ટેક્સ્ટ ડાબી બાજુ સેટ કર્યો */
+  .wsmegamenu h7, 
+  .wsmegamenu .title {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    padding: 12px 22px 6px 36px !important; /* ડાબી બાજુ પરફેક્ટ પેડિંગ */
+    margin: 0 !important;
+    display: block !important;
+    color: var(--text-nav) !important;
+    text-align: left !important; /* હેડિંગ ડાબી બાજુ રહેશે */
+  }
+
+  .wsmegamenu .link-list {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  .wsmegamenu .link-list li {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* લિંક્સનો આખો ટેક્સ્ટ પ્રોપર ડાબી બાજુ સેટ કર્યો */
   .wsmegamenu .link-list li a {
-    padding: 10px 22px 10px 36px;
-    border-bottom: 1px solid var(--border);
+    display: block !important;
+    width: 100% !important;
+    padding: 12px 22px 12px 46px !important; /* સબ-લિંક માટે અંદર સ્પેસ આપી */
+    font-size: 0.88rem !important;  
+    line-height: normal !important;
+    color: var(--text-nav) !important;
+    border-bottom: 1px solid var(--border) !important; 
+    text-align: left !important;       /* ડાબી બાજુથી લખાણ શરૂ થશે */
+    white-space: normal !important;   /* લખાણ દબાશે કે કપાશે નહીં */
+    transform: none !important;
+  }
+
+  .wsmegamenu .link-list li:last-child a {
+    border-bottom: none !important;
   }
 
   /* Right-side auth links */
@@ -177,13 +281,19 @@
   }
 }
 
-/* ════════════════════════════════════════════════════════════
-   RESPONSIVE — Small Mobile ≤ 575px
-   ════════════════════════════════════════════════════════════ */
+/* ==========================================================================
+   RESPONSIVE — Small Mobile (≤ 575px)
+   ========================================================================== */
 @media (max-width: 575px) {
   .wsmainfull {
     width: 260px;
-    left: -260px;
+    right: -260px !important;
+    left: auto !important;
+  }
+  
+  .wsmainfull.open {
+    right: 0 !important;
+    left: auto !important;
   }
 
   .wsmobileheader {
@@ -194,7 +304,6 @@
     max-height: 30px;
   }
 }
-
 @media (max-width: 991px) {
   .hero-section {
     padding: 100px 0 60px;
@@ -868,73 +977,3 @@
 
 
 
-/* Mobile Header */
-.wsmobileheader{
-    display:none;
-}
-
-@media (max-width:991px){
-
-    .wsmobileheader{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        height:70px;
-        padding:0 20px;
-        background:#fff;
-        width:100%;
-    }
-
-    .desktoplogo{
-        display:none;
-    }
-
-    #wsnavtoggle{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        width:40px;
-        height:40px;
-        cursor:pointer;
-    }
-
-    .wsmenu{
-        position:fixed;
-        top:70px;
-        left:-100%;
-        width:280px;
-        height:100vh;
-        background:#fff;
-        transition:.4s;
-        overflow-y:auto;
-        z-index:999;
-    }
-
-    .wsmenu.active{
-        left:0;
-    }
-
-    .wsmenu-list{
-        display:flex;
-        flex-direction:column;
-        padding:20px;
-    }
-
-    .wsmenu-list li{
-        width:100%;
-        margin-bottom:10px;
-    }
-
-    .sub-menu,
-    .wsmegamenu{
-        position:static;
-        display:none;
-        width:100%;
-        box-shadow:none;
-    }
-
-    .sub-menu.active,
-    .wsmegamenu.active{
-        display:block;
-    }
-}
