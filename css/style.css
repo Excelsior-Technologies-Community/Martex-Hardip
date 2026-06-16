@@ -72,11 +72,15 @@ img {
 #header.tra-menu .header-wrapper {
   background: transparent;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 #header.tra-menu.white-scroll .header-wrapper,
 #header.white-header .header-wrapper {
-  background: var(--white);
+  background: var(--overlay);
   box-shadow: var(--shadow-sm);
 }
 
@@ -405,39 +409,7 @@ li:hover>.sub-menu {
   border-color: var(--pink);
 }
 
-/* ─── TRANSPARENT HEADER VARIANT ───────────────────────── */
-/* When header is transparent (top of page), show white logo + white links */
-/* #header.tra-menu:not(.white-scroll) .wsmenu-list>li>a.h-link {
-  color: rgba(255, 255, 255, 0.85);
-}
 
-#header.tra-menu:not(.white-scroll) .wsmenu-list>li>a.h-link:hover {
-  color: var(--white);
-}
-
-#header.tra-menu:not(.white-scroll) .wsarrow {
-  border-color: rgba(255, 255, 255, 0.7);
-}
-
-#header.tra-menu:not(.white-scroll) .logo-black {
-  display: none;
-}
-
-#header.tra-menu:not(.white-scroll) .logo-white {
-  display: inline-flex;
-}
-
-#header.tra-menu:not(.white-scroll) .btn--theme {
-  background: var(--white);
-  color: var(--pink);
-  border-color: var(--white);
-}
-
-#header.tra-menu:not(.white-scroll) .btn--theme:hover {
-  background: transparent;
-  color: var(--white);
-  border-color: var(--white);
-} */
 
 /* ─── UTILITY ───────────────────────────────────────────── */
 .clearfix::after {
@@ -450,9 +422,7 @@ li:hover>.sub-menu {
   width: 100%;
 }
 
-/* ════════════════════════════════════════════════════════════
-   RESPONSIVE — Tablet ≤ 991px
-   ════════════════════════════════════════════════════════════ */
+
 
 
 /* ════════════════════════════════════════════════════════════
